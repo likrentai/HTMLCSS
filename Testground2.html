@@ -5,6 +5,17 @@
         <title>Testground 2</title>
         <style>
             body {
+                background-image: url(Pics/Sky01.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                background-attachment: fixed;
+                background-color: rgb(255, 255, 255, 0.75);
+                background-blend-mode: lighten;
+                margin: 0%;
+            }
+
+            header {
                 background-image: url(Pics/Sky03.jpg);
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
@@ -16,25 +27,36 @@
             }
 
             .d1 {
-                text-align: center;
-                height: 600px;
-                padding-top: 300px;
+                height: 80vh;
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                flex-direction: column;
+                padding-top: 15%;
+                padding-left: 50%;
             }
 
             .d2 {
                 background-color: aliceblue;
                 padding: 1%;
             }
+
+            #hing01 {
+
+            }
         </style>
     </head>
     <body>
-        <div class="d1">
-            <h1>2022 FALL CLASS TWO</h1>
-            <h2>This site will be revamped next week</h2>        
-            <p id="test01"><a href="#test02">Go to page bottom</a></p>
-        </div>
-
+        <header>
+            <div class="d1">
+                <h1 style="font: 6.0em Geneva; margin-bottom: 0%;">SOLBRIDGE</h1>
+                <h1 style="font: 1.5em Geneva; margin-top: 0%;">INTERNATIONAL SCHOOL OF BUSINESS</h1>
+                <h2 style="margin-bottom: 0%;">CODING FOR BUSINESS</h2>
+                <h3 style="margin-top: 2%;">2022 Fall Section One</h2>
+            </div>
+        </header>
         <div class="d2">
+            <p id="test01"><a href="#test02">Go to page bottom</a></p>
             <p>Things to do today</p> <!--Insert comments here-->
             <ol>
                 <li>Homework</li>
