@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Section 2</title>
     </head>
     <body>
@@ -41,13 +42,43 @@
         <form>
             <fieldset>
                 <legend><h3>This is a form box</h3></legend>
-                <input type="text" size="100" placeholder="Please insert text">
-                <button type="button">SEND</button>
+                <input type="text" size="50" placeholder="Please insert text">
+                <input type="button" value="SEND" onclick="alert('Submission Sucess')">
                 <br>
                 <br>
                 <button type="button"><a href="https://www.google.co.kr">CLICK TO GOOGLE SEARCH</a></button>
                 <p>Email Address:</p>
                 <input type="email" size="50" placeholder="Type email address here">
+                <p>Password:</p>
+                <input type="password" size="50">
+
+                <p>Please choose an available timeslot for consultation service:</p>
+                <input type="radio" id="ts1" name="timeslot">
+                <label for="ts1">0900 to 1000 AM</label>
+                <br>
+                <input type="radio" id="ts2" name="timeslot">
+                <label for="ts1">1000 to 1100 AM</label>
+                <br>
+                <input type="radio" id="ts3" name="timeslot">
+                <label for="ts1">1100 to 1200 AM</label>
+                <br>
+                <input type="radio" id="ts4" name="timeslot">
+                <label for="ts1">0100 to 0200 PM</label>
+                <br>
+
+                <p>Please choose the type of consultation service:</p>
+                <input type="checkbox"><label>Web development: HTML</label><br>
+                <input type="checkbox"><label>Web development: CSS</label><br>
+                <input type="checkbox"><label>Web development: JavaScript</label><br>
+                <input type="checkbox"><label>Web development: JS Node - Express</label><br>
+                <input type="checkbox"><label>Web development: SQL</label><br>
+                <input type="checkbox"><label>Web development: JSReact</label><br>
+                <input type="checkbox"><label>Web development: NoSQL</label><br>
+                <br>
+                <input type="submit" value="Submit Request">
+                <br>
+                <p>Please include any comments or specific request:</p>
+                <textarea rows="5" cols="50">Insert text here</textarea>
             </fieldset>            
         </form>
         <hr>
