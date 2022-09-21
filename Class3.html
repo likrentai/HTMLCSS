@@ -47,12 +47,55 @@
         <form>
             <fieldset>
                 <legend><h3>THIS IS A FORM BOX</h3></legend>
-                <input type="text" size="120" placeholder="Please insert text here">
+                <input type="text" size="50" placeholder="Please insert text here">
                 <input type="button" value="SUBMIT" onclick="alert('Form submitted')">
                 
                 <p>Email Address:</p>
                 <input type="email" size="50" placeholder="Type email address here">
                 <button type="button"><a href="https://www.google.co.kr">SEND</a></button>
+
+                <p>Password:</p>
+                <input type="password" size="50">
+
+                <p>Please choose an available timeslot for consultation service:</p>
+                <input type="radio" id="ts1" name="timeslot">
+                <label for="ts1">0900 to 1000 AM</label>
+                <br>
+                <input type="radio" id="ts2" name="timeslot">
+                <label for="ts2">1000 to 1100 AM</label>
+                <br>
+                <input type="radio" id="ts3" name="timeslot">
+                <label for="ts3">1100 to 1200 AM</label>
+                <br>
+                <input type="radio" id="ts4" name="timeslot">
+                <label for="ts4">0100 to 0200 PM</label>
+                <br>
+
+                <p>Please choose the type of consultation service:</p>
+                <input type="checkbox"><label>Web development: HTML</label><br>
+                <input type="checkbox"><label>Web development: CSS</label><br>
+                <input type="checkbox"><label>Web development: JavaScript</label><br>
+                <input type="checkbox"><label>Web development: JS Node - Express</label><br>
+                <input type="checkbox"><label>Web development: SQL</label><br>
+                <input type="checkbox"><label>Web development: JSReact</label><br>
+                <input type="checkbox"><label>Web development: NoSQL</label><br>
+                <br>
+                <input type="submit" value="SUBMIT">
+                <br>
+                
+                <p>Please include any comments or specific request:</p>
+                <textarea rows="5" cols="100">Insert text here</textarea>
+                <br>
+
+                <h3>Please select your preferred consultant:</h3>
+                <select style="font-size: 50px;">
+                    <option value="a" selected>Choose below</option>
+                    <option value="b">Professor One</option>
+                    <option value="c">Professor Two</option>
+                    <option value="d">Professor Three</option>
+                    <option value="e">Professor Four</option>
+                    <option value="f">Professor Five</option>
+                </select>
             </fieldset>            
         </form>
         <hr>
