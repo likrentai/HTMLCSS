@@ -38,6 +38,17 @@
                 background-blend-mode: lighten;
                 height: 80vh;
             }
+
+            .ps3 {
+                background-image: url(Pics/Sea03.jpg);
+                overflow: hidden;
+                background-size: 100%;
+                background-position: center;
+                background-attachment: fixed;
+                background-color: rgb(255, 255, 255, 0.6);
+                background-blend-mode: lighten;
+                height: 80vh;
+            }
         </style>
     </head>
     <body>
@@ -47,53 +58,140 @@
             <h2 style="margin-bottom: 0%;">CODING FOR BUSINESS</h2>
             <h3 style="margin-top: 2%;">2022 Fall Section Two</h2>
         </div>
-        <p><a href="#test02">Go to page bottom</a></p>
-        <p>Things to do today</p> <!--Insert comments here-->
-        <ol>
-            <li>Homework</li>
-            <li>Food shopping</li>
-            <li>Cleaning</li>
-        </ol>
-        <br>
-        <ul>
-            <li>Sleeping</li>
-            <li>Laundry</li>
-            <li>Watching Youtube videos</li>
-        </ul>
-        <hr>
-        <h1>BREAKFAST</h1>
-        <h2>BREAKFAST</h2>
-        <h3>BREAKFAST</h3>
-        <h4>BREAKFAST</h4>
-        <h5>BREAKFAST</h5>
-        <h6>BREAKFAST</h6>
-        <p>BREAKFAST</p>
-        <div class="ps2">
-        </div>
-        <div style="background-color:aquamarine;">
-            <h2>This is a <span style="color: red; font-size: 100px;">span message</span>. <span style="font-size: 40px;">Click</span> to delete.</h2>
-        </div>
-        <hr>
-        <h2><a href="https://www.google.co.kr" target="_blank">Click here to google search!</a></h2>
-        <hr>
-        <img src="Pics/image001.png" width="400px" height="15%">
-        <img src="C:\Users\likre\Downloads\7 HTML CSS JavaScript\2022 Fall\Pics\image008.png">
+
+        <div class="d2">
+            <p><a href="#test02">Go to page bottom</a></p>
+            <h3>Course Description & Objectives</h3>
+            <p>Coding for Business adopts a cohesive set of fundamental scripting and programming skills of HTML, CSS, JavaScript, and ReactJS library essential for frontend web development. The course serves to set the stage for the four key technologies in MERN stack development:</p>
+            <ul>
+                <li>MongoDB</li>
+                <li>Express JS</li>
+                <li>React JS</li>
+                <li>Node JS</li>
+            </ul>
+            <hr>
+            <h3>Learning and Teaching Structure</h3>
+            <p>Participants will be required to demonstrate strong problem solving and logic thinking skills during the process of tackling problems in prototyping web applications.</p>
+            <hr>
+            <h3>Course Materials</h3>
+            <p>All learning materials will be provided in the <span style="color: red;"> google drive.</span></p>
+            <p><a href="https://bit.ly/data101cfb" target="_blank">Click here to access the course materials.</a></p>
+            <hr>
+
+            <div>
+                <h3>Course Terms & Conditions</h3>
+                <p>Coding for Business Terms And Conditions (these “Terms” or these “Terms and Conditions”) contained in this agreement shall apply to your participation in this course and all its study content/materials including information/documents. These terms outline the following course policies and rules guiding the course participation in Coding for Business. The course policies shall be periodically reviewed and subjected to modifications when deemed necessary. These terms and conditions apply in full force with effect to your acceptance and agreement. Agreement to the terms and conditions is required for the eligibility of the course assessments.</p>
+                <h4>Course Policy</h4>
+                <ol>
+                    <li>Roll call of attendance - Attendance recording will be taken at any point of time during a lecture session.</li>
+                    <li>Non-forced participation - Discharging from the course is welcomed for those who dislike STEM IT subjects.</li>
+                    <li>In-Class Assistance -  Assistance can be provided only upon request so as to prevent any complaints and legal liabilities.</li>
+                    <li>Termination on the issuance of Microsoft IT certifications - Use of Woosong/Solbridge online learning platform for IT courses and issuance of Microsoft IT certifications have now been discontinued.</li>
+                    <li>Web development - The course focuses on web development skills in the languages of HTML, CSS & JavaScript. Arrangement for a course drop-out is welcomed for those wishes to learn other subjects.</li>
+                    <li>Late submission - Any late submission of given assignments will not be accepted.</li>
+                    <li>Plagiarism - Agreement to the terms & conditions indicates your understanding of the definition of plagiarism.</li>
+                    <li>Discontinuation of project assignment - Project on e-commerce web app development and code writing is now officially discontinued until further notice. This will be replaced by direct in-class participation.</li>
+                    <li>Midterm & Final: Sit-In Exams - Course assessments will be delivered via the traditional method of sitting for exams physically in a lecture room.</li>
+                    <li>Grade plus assignment - Grade plus will not be granted unless exceptional cases.</li>
+                    <li>Grading Curve:
+                        <ul>
+                            <li>The grading curve was created by the Korean Ministry of Education.</li>
+                            <li>The grading curve is officially implemented by Solbridge.</li>
+                            <li>The grading curve was not invented by the instructor.</li>
+                            <li>The instructor must adhere accordingly to his duties to assign grades.</li>
+                            <li>The instructor does not gain benefits from grade assignments.</li>
+                            <li>The grading curve is NOT based on students’ beliefs nor on their accusations.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <input type="text" size="60" placeholder="Permission to the use of the above T&C. Please insert your name here">
+                <input type="button" value="CONSENT" onclick="alert('Consent Accepted')">
+                <hr>
+            </div>
+        </div>        
+        
+        <div class="ps2"></div>
+
         <form>
             <fieldset>
-                <legend><h3>This is a form box</h3></legend>
-                <input type="text" size="100" placeholder="Please insert text">
-                <button type="button">SEND</button>
+                <legend><h3>Consultation Service</h3></legend>
+                <p>Email Address: <span><input type="email" size="40" placeholder="Please insert your email address here"></span></p>
+                <p>Password: <span><input type="password" size="30"></span></p>
+                
+                <p>Please choose an available timeslot for consultation service:</p>
+                <input type="radio" id="ts1" name="timeslot">
+                <label for="ts1">0900 to 1000 AM</label>
+                <br>
+                <input type="radio" id="ts2" name="timeslot">
+                <label for="ts2">1000 to 1100 AM</label>
+                <br>
+                <input type="radio" id="ts3" name="timeslot">
+                <label for="ts3">1100 to 1200 AM</label>
+                <br>
+                <input type="radio" id="ts4" name="timeslot">
+                <label for="ts4">0100 to 0200 PM</label>
                 <br>
                 <br>
-                <button type="button"><a href="https://www.google.co.kr">CLICK TO GOOGLE SEARCH</a></button>
-                <p>Email Address:</p>
-                <input type="email" size="50" placeholder="Type email address here">
+
+                <p>Please choose the type of consultation service:</p>
+                <input type="checkbox"><label>Web development: HTML</label><br>
+                <input type="checkbox"><label>Web development: CSS</label><br>
+                <input type="checkbox"><label>Web development: JavaScript</label><br>
+                <input type="checkbox"><label>Web development: JS Node - Express</label><br>
+                <input type="checkbox"><label>Web development: SQL</label><br>
+                <input type="checkbox"><label>Web development: JSReact</label><br>
+                <input type="checkbox"><label>Web development: NoSQL</label><br>
+                <br>
+                
+                <p>Please select your project type:</p>
+                <select>
+                    <option value="a" selected>Choose below</option>
+                    <option value="b">General interest</option>
+                    <option value="c">E-commerce</option>
+                    <option value="d">Business information</option>
+                    <option value="e">Portfolio site</option>
+                    <option value="f">Video streaming</option>
+                    <option value="f">Crowdfunding</option>
+                </select>
+                <br>
+                <br>
+                <p>Please include any comments or specific request:</p>
+                <textarea rows="5" cols="80">Insert text here</textarea>
+                <br>
+                <br>
+                <input type="submit" value="SUBMIT FORM">
             </fieldset>            
         </form>
+
+        <div class="ps3"></div>
+        
+        <div>
+            <h3>Office Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.909102259461!2d127.43002141510343!3d36.338752780046285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356548e43923b465%3A0xeb68d562dc4a2619!2sSolBridge%20International%20School%20of%20Business!5e0!3m2!1sen!2skr!4v1664151792681!5m2!1sen!2skr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <hr>
-        <p id="test02"><a href="#test01">Go to top of the page</a></p>
+        <div>
+            <h3>Price Quotation</h3>
+            <div class="calconic-calculator"  data-calculatorid="632acc45b6ab9e002ab609fc"></div>
+            <script>
+                (function() { var qs,j,q,s,d=document, gi=d.getElementById,
+                ce=d.createElement, gt=d.getElementsByTagName,
+                id="calconic_", b="https://cdn.calconic.com/static/js/";
+                if(!gi.call(d,id)) { j=ce.call(d,"script"); j.id=id; j.type="text/javascript"; j.async=true;
+                j.dataset.calconic=true;
+                j.src=b+"calconic.min.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(j,q) }
+            })();
+            </script>
+        </div>
+        <hr>
+        <div>
+            <h3>Midterm Performance</h3>
+            <iframe width="466" height="284" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRgk6PSH5l_TRVaF4MUPEzi12NHw9ZLow7r5e2Y06E0dxAU0DiuWSEI4O7sHNXDhWQg_qxqpk4RRiVb/pubchart?oid=1861414047&amp;format=interactive"></iframe>
+        </div>
+
         <footer>
-            <h3>Email address here</h3>
+            <hr>
+            <p id="test02"><a href="#test01">Return to page top</a></p>
         </footer>
     </body>    
 </html>
