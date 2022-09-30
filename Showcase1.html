@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test One</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+                /*
+                margin: 0%;
+                background-color: lightcyan;
+                background-image: url(Pics/Sky02.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center;
+                background-attachment: fixed;
+                background-color: rgb(255, 255, 255, 0.5);
+                background-blend-mode: lighten;
+                overflow: hidden;
+                transform: translate3d(0px, 0px, 0px);
+                */
+
+            .px {
+                text-align: center;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 0%;
+                margin-bottom: 0%;
+                padding-top: 0%;
+                padding-bottom: 0%;
+                position: fixed;
+                left: 35%;
+            }
+
+            .animate__animated {
+                font: 6em Geneva;
+                margin-top: 0%;
+                margin-bottom: 0%;
+            }
+        </style>        
+    </head>
+    <body>
+        <div class="px">
+            <h1 class="animate__animated animate__bounce animate__slow animate__infinite">SOLBRIDGE</h1>
+            <h2 style="font: 2em Geneva; margin-top: 0%; margin-bottom: 0%;">INTERNATIONAL SCHOOL OF BUSINESS</h2>
+            <h3 style="font-size: 1.5em;">CODING FOR BUSINESS</h2>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!--
+            <script type="module" src="https://threejs.org/build/three.js"></script>
+            OR
+            import * as THREE from 'https://unpkg.com/three@0.108.0/build/three.module.js';
+            import {OrbitControls} from 'https://unpkg.com/three@0.108.0/examples/jsm/controls/OrbitControls.js';
+        -->
+
+        <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r122/three.min.js"></script>
+        <script type="module">            
+            var scene = new THREE.Scene();
+            scene.background = new THREE.Color( 'aliceblue' );
+
+            document.addEventListener( 'mousemove', onMouseMove, false );
+            var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+            var mouseX;
+            var mouseY;
+
+            var renderer = new THREE.WebGLRenderer();
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            document.body.appendChild( renderer.domElement );
+
+            window.addEventListener("resize", function() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            });
+
+            var distance = Math.min(200, window.innerWidth / 4);
+            var geometry = new THREE.Geometry();
+
+            for (var i = 0; i < 50000; i++) {
+
+            var vertex = new THREE.Vector3();
+
+            // var theta = THREE.Math.randFloatSpread(360); 
+            var theta = Math.acos(THREE.Math.randFloatSpread(2)); 
+            var phi = THREE.Math.randFloatSpread(360); 
+
+            vertex.x = distance * Math.sin(theta) * Math.cos(phi);
+            vertex.y = distance * Math.sin(theta) * Math.sin(phi);
+            vertex.z = distance * Math.cos(theta);
+
+            geometry.vertices.push(vertex);
+            }
+
+            var particles = new THREE.Points(geometry, new THREE.PointsMaterial({color: 'black', size: 0.5}));
+            /*0xff44ff*/
+            particles.boundingSphere = 50;
+
+            var renderingParent = new THREE.Group();
+            renderingParent.add(particles);
+
+            var resizeContainer = new THREE.Group();
+            resizeContainer.add(renderingParent);
+            scene.add(resizeContainer);
+
+            camera.position.z = 400;
+
+            var animate = function () {
+            requestAnimationFrame( animate );
+            renderer.render( scene, camera );
+            };
+            var myTween;
+            function onMouseMove(event) {
+                if(myTween)
+                    myTween.kill();            
+                    mouseX = ( event.clientX / window.innerWidth ) * 2 - 1;
+                    mouseY = - ( event.clientY / window.innerHeight ) * 2 + 1;
+                    myTween = gsap.to(particles.rotation, {duration: 0.1, x: mouseY*-1, y: mouseX});
+                    //particles.rotation.x = mouseY*-1;
+                    //particles.rotation.y = mouseX;
+            }
+            animate();
+
+            // Scaling animation
+            var animProps = {scale: 1, xRot: 0, yRot: 0};
+            gsap.to(animProps, {duration: 10, scale: 1.3, repeat: -1, yoyo: true, ease: "sine", onUpdate: function() {
+            renderingParent.scale.set(animProps.scale,animProps.scale,animProps.scale);
+            }});
+
+            gsap.to(animProps, {duration: 120, xRot: Math.PI * 2, yRot: Math.PI * 4, repeat: -1, yoyo: true, ease: "none", onUpdate: function() {
+            renderingParent.rotation.set(animProps.xRot,animProps.yRot,0);
+            }});
+
+            /*
+            const camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
+            camera.position.z = 1;
+
+            const scene = new THREE.Scene();
+
+            const geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
+            const material = new THREE.MeshNormalMaterial();
+
+            const mesh = new THREE.Mesh( geometry, material );
+            scene.add( mesh );
+
+            const renderer = new THREE.WebGLRenderer( { antialias: true } );
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            renderer.setAnimationLoop( animation );
+            document.body.appendChild( renderer.domElement );
+
+            // animation
+
+            function animation( time ) {
+
+                mesh.rotation.x = time / 2000;
+                mesh.rotation.y = time / 1000;
+
+                renderer.render( scene, camera );
+
+            }
+            */        
+        </script>
+    </body>
+</html>
+
+<!--
+    Geometry support for Three.js has been removed from version r125 and above. Need to use r122 in version declaration while using cdn for geometry
+-->
