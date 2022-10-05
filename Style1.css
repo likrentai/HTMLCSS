@@ -1,5 +1,15 @@
 body {
     background-color: aliceblue;
+    color:navy;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
 }
 
-/*This is for commenting / making notes. No real changes will be reflected.*/
+a {color: black; text-decoration: none;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {color: dodgerblue; background-color: none; text-decoration: none;}
+
+#test01 {
+    text-align: center;
+}
