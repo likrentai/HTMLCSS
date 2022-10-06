@@ -22,19 +22,86 @@ a:hover {color: dodgerblue; background-color: none; text-decoration: none;}
     padding-left: 50%;
 }
 
-.d1 {
-    text-align: center;
-}
+.d1 {text-align: center;}
 
 #test03 {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
-#float1 {
-    text-align: center;
-}
+#post1 {text-align: center;}
 
 .c1 {
     width: 160px;
     height: 120px;
     display: inline;
 }
+
+#post2 {padding-bottom: 130px;}
+
+.c2 {
+    width: 160px;
+    height: 120px;
+    display: block;
+    float: left;
+    border: 1px solid black;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#post3 {padding-bottom: 40px;}
+.c3 {
+    width: 160px;
+    height: 120px;
+    border: 1px solid black;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#c3p1 {float: left;}
+#c3p3 {float: right;}
+#c3p2 {margin-left: 20%;}
+
+#post4 {padding-bottom: 120px;}
+.c4 {
+    width: 160px;
+    height: 120px;
+    display: block;
+
+    border: 1px solid black;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    float: left;
+    position: absolute;
+}
+
+#post5 {height: 240px;}
+#post5::after {display: table; content: ""; clear: both;}
+.c5 {
+    float: left;
+    margin: 1%;
+    position: absolute;
+    z-index: 0;
+    
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 70px;
+    height: 60px;
+    transition: width 0.6s, height 0.6s;
+    transition-timing-function: ease-in-out;
+}
+.c5:hover {
+    box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.5);
+    width: 240px;
+    height: 200px;
+}
+#c5p1:hover {z-index: 1;}
+#c5p2:hover {z-index: 1;}
+#c5p3:hover {z-index: 1;}
+#c5p4:hover {z-index: 1;}
+#c5p5:hover {z-index: 1;}
+#c5p6:hover {z-index: 1;}
+#c5p7:hover {z-index: 1;}
+#c5p8:hover {z-index: 1;}
+#c5p9:hover {z-index: 1;}
+#c5p10:hover {z-index: 1;}
