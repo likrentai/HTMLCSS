@@ -1,10 +1,2 @@
-function abc() {
-  return <h1>TEST</h1>;
-}
-
-const root = ReactDOM.createRoot(document.querySelector('#react1'));
-root.render(
-  <>
-    <abc />
-  </>
-);
+const root = ReactDOM.createRoot(document.getElementById('react1'));
+root.render(<h1>Hello, world!</h1>);
