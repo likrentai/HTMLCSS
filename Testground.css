@@ -1,0 +1,144 @@
+body {
+    background-image: url(Pics/Sky01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgb(255, 255, 255, 0.75);
+    background-blend-mode: lighten;
+    margin: 0%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-image: url(Pics/Sky01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgb(255, 255, 255, 0.75);
+    background-blend-mode: lighten;
+}
+
+a {color: black; text-decoration: none;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {color: dodgerblue; background-color: none; text-decoration: none;}
+
+.d1 {
+    height: 80vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15%;
+    padding-left: 50%;
+}
+
+.d2 {
+    background-color: aliceblue;
+    padding: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.d3-d4 {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: block;
+}
+
+#d3 {
+    float: left;
+}
+
+#d3a {
+    height: 970px;
+}
+
+#d4a {
+    text-align: center;
+}
+
+#d4b {
+    height: 640px;
+}
+
+/**/
+
+#n1 {
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#n2 {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+
+.n3 {
+    float: left;
+    font-size: larger;
+    padding: 8px;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+.n3 a {
+    display:grid;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.n3 a:hover {
+    background-color: navy;
+    color: aliceblue;
+    transform: scale(1.8);
+}
+
+/**/
+footer {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#bottom {
+    margin-left: 15%;
+    text-align: left;
+}
+
+#f1 {
+    text-decoration: underline;
+    font-size: x-large;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+#f2 {
+    color: darkblue;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0%;
+    margin-bottom: 10px;
+}
+
+#f3 {
+    color: white;
+    background-color: navy;
+    font-size: 16px;
+    padding: 5px 30px;
+    margin-top: 0%;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: none;
+}
+
+#f4 {
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
