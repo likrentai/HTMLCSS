@@ -7,7 +7,7 @@ body {
     background-color: rgb(255, 255, 255, 0.75);
     background-blend-mode: lighten;
     margin: 0%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: system-ui;
 }
 
 header {
@@ -82,7 +82,7 @@ a:hover {color: dodgerblue; background-color: none; text-decoration: none;}
 
 .n3 {
     float: left;
-    font-size: larger;
+    font-size: large;
     padding: 8px;
     padding-left: 36px;
     padding-right: 36px;
@@ -90,7 +90,7 @@ a:hover {color: dodgerblue; background-color: none; text-decoration: none;}
 
 .n3 a {
     display:grid;
-    font-weight: 900;
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -103,7 +103,6 @@ a:hover {color: dodgerblue; background-color: none; text-decoration: none;}
 /**/
 footer {
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #bottom {
@@ -114,14 +113,14 @@ footer {
 #f1 {
     text-decoration: underline;
     font-size: x-large;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 20px;
     margin-bottom: 6px;
 }
 
 #f2 {
     color: darkblue;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     margin-top: 0%;
     margin-bottom: 10px;
