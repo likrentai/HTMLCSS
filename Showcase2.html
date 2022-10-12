@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Showcase 2</title>
+        
+        <style>
+            @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+            body {margin:0;}
+
+            h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight:300;
+            letter-spacing: 2px;
+            font-size:48px;
+            }
+            p, nav {
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 1px;
+            font-size:16px;
+            color: #333333;
+            }
+
+            .header {
+            position:relative;
+            text-align:center;
+            background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+            color:white;
+            }
+
+            .inner-header {
+            height:70vh;
+            width:100%;
+            margin: 0;
+            padding: 0;
+            }
+
+            .flex { /*Flexbox for containers*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            }
+
+            .waves {
+            position:relative;
+            width: 100%;
+            height:10vh;
+            margin-bottom:-7px; /*Fix for safari gap*/
+            min-height:100px;
+            max-height:150px;
+            }
+
+            .content {
+            position:relative;
+            height:15vh;
+            text-align:center;
+            background-color: white;
+            }
+
+            /* Animation */
+            .parallax > use {
+            animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+            }
+            .parallax > use:nth-child(1) {
+            animation-delay: -2s;
+            animation-duration: 7s;
+            }
+            .parallax > use:nth-child(2) {
+            animation-delay: -3s;
+            animation-duration: 10s;
+            }
+            .parallax > use:nth-child(3) {
+            animation-delay: -4s;
+            animation-duration: 13s;
+            }
+            .parallax > use:nth-child(4) {
+            animation-delay: -5s;
+            animation-duration: 20s;
+            }
+            @keyframes move-forever {
+                0% {transform: translate3d(-90px,0,0);}
+                100% { transform: translate3d(85px,0,0);}
+            }
+            /*Shrinking for mobile*/
+            @media (max-width: 768px) {
+                .waves {
+                    height:40px;
+                    min-height:40px;
+                }
+                .content {height:30vh;}
+                h1 {font-size:24px;}
+            }
+
+            .px {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 0%;
+                margin-bottom: 0%;
+                padding-top: 0%;
+                padding-bottom: 0%;
+            }
+
+            #n1 {text-align: left; margin-top: 5%; margin-left: 15%; margin-right: 15%;}
+            #n2 {
+                list-style-type: none;
+                padding: 0;
+                margin-bottom: 10px;
+                overflow: hidden;
+            }
+            .n3 {
+                float: left;
+                font-size: large;
+                padding: 8px;
+                padding-left: 36px;
+                padding-right: 36px;
+            }
+            .n3 a {
+                display:grid;
+                font-weight: 700;
+                text-decoration: none;
+            }
+            .n3 a:hover {
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <!--Content before waves-->
+            <div class="inner-header flex">
+                <div class="px">
+                    <h1 style="font: 6em Geneva; margin-top: 0%; margin-bottom: 0%;">SOLBRIDGE</h1>
+                    <h2 style="font: 1.5em Geneva; margin-top: 0%; margin-bottom: 0%;">INTERNATIONAL SCHOOL OF BUSINESS</h2>
+                    <h3 style="font-size: 1.5em;">CODING FOR BUSINESS</h2>
+                </div>
+            </div>
+            
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+                </svg>
+                </div>                
+            </div>           
+            <!--Content starts-->
+            <div class="content flex">
+                <nav id="n1">
+                    <ul id="n2">
+                        <li class="n3"><a href="Testground2.0.html">HOME</a></li>
+                        <li class="n3"><a href="#bottom">CONTACT US</a></li>
+                        <li class="n3"><a href="Testground2.1.html">CONSULTATION</a></li>
+                        <li class="n3"><a href="Testground2.1.html">PORTFOLIO</a></li>
+                        <li class="n3"><a href="https://bit.ly/data101cfb">RESOURCES</a></li>
+                        <li class="n3"><a href="https://lrtjs.herokuapp.com">JS EXAMPLES</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--Content ends-->
+    </body>
+</html>
