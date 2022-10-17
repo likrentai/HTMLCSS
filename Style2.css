@@ -28,6 +28,30 @@ a:hover {color: dodgerblue; background-color: none; text-decoration: none;}
     margin-right: 15%;
 }
 
+.d3-d4 {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: block;
+}
+
+/*
+#d3 {
+    float: left;
+}
+
+#d3a {
+    height: 970px;
+}
+
+#d4a {
+    text-align: center;
+}
+
+#d4b {
+    height: 640px;
+}
+*/
+
 #post1 {text-align: center;}
 .c1 {
     width: 160px;
