@@ -10,4 +10,51 @@ a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
 a:hover {color: dodgerblue; background-color: none; text-decoration: none;}
 
-#top {}
+#top {
+    background-size: 100% 100%;
+}
+
+.d1 {
+    height: 80vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15%;
+    padding-left: 50%;
+}
+
+.d2 {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#post1 {text-align: center;}
+.c1 {
+    width: 160px;
+    height: 120px;
+    display: inline;
+}
+
+#post2 {padding-bottom: 130px;}
+.c2 {
+    width: 160px;
+    height: 120px;
+    display: block;
+    float: left;
+    border: 1px solid black;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#post3 {padding-bottom: 40px;}
+.c3 {
+    width: 160px;
+    height: 120px;
+    border: 1px solid black;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#c3p1 {float: left;}
+#c3p3 {float: right;}
+#c3p2 {text-align: center;}
