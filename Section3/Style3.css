@@ -2,7 +2,7 @@ body {
     color: navy;
     font-family: system-ui;
     margin: 0%;
-    background-image: url(/2022\ Fall/Pics/Sea02.jpg);
+    background-image: url(/Pics/Sea02.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -35,8 +35,8 @@ a:hover {color: dodgerblue; background-color: none; text-decoration: none;}
 
 
 .d3-d4 {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 12%;
+    margin-right: 12%;
     display: block;
 }
 
@@ -58,8 +58,8 @@ a:hover {color: dodgerblue; background-color: none; text-decoration: none;}
 
 #n1 {
     text-align: left;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 
 #n2 {
@@ -97,15 +97,15 @@ a:hover {color: dodgerblue; background-color: none; text-decoration: none;}
     display: inline;
 }
 
-#post2 {padding-bottom: 130px;}
+#post2 {padding-bottom: 300px;}
 .c2 {
     width: 160px;
     height: 120px;
     display: block;
     float: left;
     border: 1px solid navy;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 #post3 {padding-bottom: 40px;}
